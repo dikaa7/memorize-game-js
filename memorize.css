@@ -13,13 +13,22 @@ body{
 
 .row{
 	padding: 10px;
-
 }
 
 .title{
 	font-family: 'Caveat Brush', cursive;
 	font-size: 4rem;
 	font-weight: 300;
+}
+
+.instructions{
+	display: inline;
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.text{
+	display: inline;
 }
 
 .button{
@@ -36,6 +45,43 @@ body{
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
+}
+
+
+.red-text{
+	color: red;
+}
+
+.green-text{
+	color: green;
+}
+
+.yellow-text{
+	color: yellow;
+}
+
+.purple-text{
+	color: purple;
+}
+
+.blue-text{
+	color: blue
+}
+
+.orange-text{
+	color: orange;
+}
+
+.grey-text{
+	color: grey;
+}
+
+.black-text{
+	color: black;
+}
+
+.olive-text{
+	color: olive;
 }
 
 .red{
