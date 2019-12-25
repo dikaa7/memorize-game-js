@@ -20,7 +20,19 @@ function start() {
 			nextSequence();
 		}
 	});
+
+	$('.start').click(function() {
+		if (!started) {
+			$('.title').removeClass("red-text");
+			$('.instructions').hide();
+			started = true;
+			nextSequence();
+		}
+
+	});
+
 }
+
 
 $('.button').click(function() {
 	var userChosenPattern = $(this).attr('id');
@@ -43,9 +55,9 @@ function getColorNumber(color) {
 	}
 }
 
-function setTime(){
-	if(time > 210){
-		time = 600 - (10*level-1);
+function setTime() {
+	if (time > 210) {
+		time = 600 - (10 * level - 1);
 	}
 }
 
@@ -57,7 +69,7 @@ function nextSequence() {
 	var i = 0;
 	var check = function() {
 		if (i == level) {
-			$('.pattern').fadeOut(time*1.5, function() {
+			$('.pattern').fadeOut(time * 1.5, function() {
 				$('.pattern').html("");
 				isGenerate = false;
 			});
