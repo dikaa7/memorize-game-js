@@ -28,11 +28,8 @@ function start() {
 			started = true;
 			nextSequence();
 		}
-
 	});
-
 }
-
 
 $('.button').click(function() {
 	var userChosenPattern = $(this).attr('id');

@@ -6,7 +6,7 @@ body{
 	font-family: 'Roboto Mono', monospace;
 	text-align: center;
 	background: #333333;
-	color: white;
+	color: afafaf;
 }
 
 .container{
@@ -19,6 +19,7 @@ body{
 }
 
 .title{
+	color: orange;
 	font-family: 'Caveat Brush', cursive;
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -30,7 +31,18 @@ body{
 	font-weight: 600;
 }
 
+.start {
+	color: green;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.instructions{
+	font-weight: 800;
+}
+
 .text{
+	font-weight: 900;
 	display: inline;
 }
 
