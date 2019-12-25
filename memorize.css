@@ -1,5 +1,8 @@
-body{
+html{
 	font-size: 24px;
+}
+
+body{
 	font-family: 'Roboto Mono', monospace;
 	text-align: center;
 	background: #333333;
@@ -17,13 +20,13 @@ body{
 
 .title{
 	font-family: 'Caveat Brush', cursive;
-	font-size: 4rem;
+	font-size: 2.5rem;
 	font-weight: 300;
+	margin-bottom: 1rem;
 }
 
-.instructions{
+.pattern{
 	display: inline;
-	font-size: 3rem;
 	font-weight: 600;
 }
 
@@ -32,24 +35,22 @@ body{
 }
 
 .button{
-	padding: 10px;
+	padding: 5px;
 	display: inline-block;
-	margin: 10px;
-	width: 100px;
-	height: 100px;
+	margin: 8px;
+	width: 60px;
+	height: 60px;
 	border: solid 5px #000;
 	border-radius: 100%;
 }
 
-
 .pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
+  box-shadow: 0 0 20px white;
+  background-color: grey;
 }
 
-
 .red-text{
-	color: red;
+	color: #ff0000;
 }
 
 .green-text{
@@ -84,38 +85,92 @@ body{
 	color: olive;
 }
 
-.red{
-	background: red;
+#red{
+	background: #ff0000;
 }
 
-.green{
+#green{
 	background: green;
 }
 
-.yellow{
+#yellow{
 	background: yellow;
 }
 
-.purple{
+#purple{
 	background: purple;
 }
 
-.blue{
+#blue{
 	background: blue
 }
 
-.orange{
+#orange{
 	background: orange;
 }
 
-.grey{
+#grey{
 	background: grey;
 }
 
-.black{
+#black{
 	background: black;
 }
 
-.olive{
+#olive{
 	background: olive;
+}
+
+@media (max-width: 1200px){
+	html{
+		font-size: 22px;
+	}
+
+	.button{
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media (max-width: 1000px){
+	html{
+		font-size: 20px;
+	}
+
+	.title{
+		font-size: 2.5rem;
+	}
+
+	.button{
+		width: 45px;
+		height: 45px;
+		margin: 7px;
+	}
+}
+
+@media (max-width: 800px){
+	html{
+		font-size: 18px;
+	}
+
+	.title{
+		font-size: 2rem;
+	}
+
+	.button{
+		width: 35px;
+		height: 35px;
+	}
+}
+
+@media (max-width: 600px){
+	html{
+		font-size: 14px;
+	}
+
+	.button{
+		width: 30px;
+		height: 30px;
+		margin: 5px;
+	}
 }
