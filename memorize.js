@@ -131,7 +131,7 @@ function startOver() {
 	textPattern = [];
 	userClickedPattern = [];
 	$('.title').addClass('red-text').text('Game Over !');
-	$('.instructions').show().html('Press Any <b>Key</b> to <b>Restart</b>');
+	$('.instructions').show().html('Press Any <b>Key</b> or <b class="start green">Restart</b>');
 	start();
 }
 
